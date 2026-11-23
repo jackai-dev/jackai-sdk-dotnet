@@ -1,0 +1,76 @@
+{
+  "contract_fingerprint": "c7ca5e5ebb4c092910ec72b371e188303358c5e34d2908c0a88f782a241162cf",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "JackAIPlatformOSHubAPIPublicSubsetSdk 1.0.0",
+        "ecosystem": "NuGet",
+        "entry": "JackAIPlatformOSHubAPIPublicSubset.Sdk.ApiClient",
+        "import": "using JackAIPlatformOSHubAPIPublicSubset.Sdk;"
+      },
+      "operations": {
+        "failUsageQuota": {
+          "member": "Kernel.FailUsageQuotaAsync",
+          "method": "POST",
+          "path": "/v1/kernel/usage/fail",
+          "resource": "Kernel",
+          "signature": "public Task FailUsageQuotaAsync(\nRequestOptions? requestOptions = null,\nCancellationToken cancellationToken = default)"
+        },
+        "finalizeUsageQuota": {
+          "member": "Kernel.FinalizeUsageQuotaAsync",
+          "method": "POST",
+          "path": "/v1/kernel/usage/finalize",
+          "resource": "Kernel",
+          "signature": "public Task FinalizeUsageQuotaAsync(\nRequestOptions? requestOptions = null,\nCancellationToken cancellationToken = default)"
+        },
+        "getCurrentUser": {
+          "member": "User.GetCurrentAsync",
+          "method": "GET",
+          "path": "/user/me",
+          "resource": "User",
+          "signature": "public Task GetCurrentAsync(\nRequestOptions? requestOptions = null,\nCancellationToken cancellationToken = default)"
+        },
+        "getHealth": {
+          "member": "Health.GetAsync",
+          "method": "GET",
+          "path": "/health",
+          "resource": "Health",
+          "signature": "public Task GetAsync(\nRequestOptions? requestOptions = null,\nCancellationToken cancellationToken = default)"
+        },
+        "getSignupPolicy": {
+          "member": "User.GetSignupPolicyAsync",
+          "method": "GET",
+          "path": "/user/auth/signup-policy",
+          "resource": "User",
+          "signature": "public Task GetSignupPolicyAsync(\nRequestOptions? requestOptions = null,\nCancellationToken cancellationToken = default)"
+        },
+        "loginUser": {
+          "member": "User.LoginAsync",
+          "method": "POST",
+          "path": "/user/auth/login",
+          "resource": "User",
+          "signature": "public Task LoginAsync(\nRequestOptions? requestOptions = null,\nCancellationToken cancellationToken = default)"
+        },
+        "reserveUsageQuota": {
+          "member": "Kernel.ReserveUsageQuotaAsync",
+          "method": "POST",
+          "path": "/v1/kernel/usage/reserve",
+          "resource": "Kernel",
+          "signature": "public Task ReserveUsageQuotaAsync(\nRequestOptions? requestOptions = null,\nCancellationToken cancellationToken = default)"
+        },
+        "submitWaitlistRequest": {
+          "member": "User.SubmitWaitlistRequestAsync",
+          "method": "POST",
+          "path": "/user/auth/waitlist",
+          "resource": "User",
+          "signature": "public Task SubmitWaitlistRequestAsync(\nRequestOptions? requestOptions = null,\nCancellationToken cancellationToken = default)"
+        }
+      },
+      "package_directory": "../JackAIPlatformOSHubAPIPublicSubsetSdk",
+      "package_manifest": "JackAIPlatformOSHubAPIPublicSubsetSdk.csproj",
+      "reference": "api.md",
+      "renderer": "dotnet"
+    }
+  ]
+}
